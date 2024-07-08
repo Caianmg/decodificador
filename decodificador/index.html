@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decodificador</title>
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+    <body>
+        <main>
+            <section id="logo-section">
+                <img src="./assets/logo.png" alt="Logo">
+            </section>
+            <section id="input-section">
+                <textarea id="textoDeEntrada" placeholder="Digite seu texto"></textarea>
+            </section>
+            <section id="aviso-section">
+                <p id="aviso-texto"><img src="./assets/exclamation-circle.png" alt="Ícone de exclamação"> Apenas letras minúsculas e sem acento.</p>
+                <p id="mensagem-erro" class="oculto"></p>
+            </section>
+            <section id="botoes-section">
+                <button id="criptografar" class="btn-criptografar">Criptografar</button>
+                <button id="descriptografar" class="btn-descriptografar">Descriptografar</button>
+            </section>
+            <section id="resultado-section">
+                <img src="./assets/busca.png" alt="Imagem de busca" id="imagem-busca">
+                <p id="primeiro-paragrafo">Nenhuma mensagem encontrada</p>
+                <p id="segundo-paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <p id="texto-resultante" class="oculto"></p>
+                <button id="copiar" class="oculto">Copiar</button>
+                <p id="mensagem-copia" class="oculto">Texto copiado para a área de transferência!</p>
+            </section>
+        </main>
+        <footer>
+            <p>Desenvolvido por Caian Marques.</p>
+        </footer>
+        <script src="scripts.js"></script>
+    </body>
+</html>
